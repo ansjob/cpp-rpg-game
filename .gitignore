@@ -11,3 +11,14 @@
 *.lai
 *.la
 *.a
+
+#vim files
+*.swp
+
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+docs/
+game
+
+Makefile
