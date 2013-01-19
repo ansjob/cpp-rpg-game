@@ -1,7 +1,25 @@
 cpp-rpg-game
 ============
 
-A small lab we made for the course cprog12 to create a C++ role playing game using classic text-commands. The engine is there and very extensible.
+A fairly big lab we (me and marcular@kth.se) made for the course cprog12 to create a C++ 
+role playing game using classic text-commands. 
+The engine is there and very extensible.
+
+Some key features are:
+
+* Fully customizable map (read from the file univ.xml)
+* Fight system with accuracy and ranges for each weapon (making fights interesting)
+* Possibility to alias commands
+* Consumable items like shield boosters
+
+Setting
+=======
+
+The setting of the game is space. You have a small space ship and travel between solar systems in the galaxy.
+When you encounter other characters you can talk to them, fight them, and engage in trade with some.
+The main plot is that you should try to find and kill the evil boss; "Charlie Mancrunch" because
+he has kidnapped the mayor of your home town.
+
 
 Compiling
 =========
