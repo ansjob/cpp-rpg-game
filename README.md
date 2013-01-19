@@ -17,7 +17,9 @@ We make use of boost's property tree and regular expressions, so a recent versio
 When these requirements are met, compiling is simply done by using cmake:
 
 cmake .
+
 make 
+
 ./game
 
 
