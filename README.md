@@ -1,7 +1,7 @@
 cpp-rpg-game
 ============
 
-A fairly big lab we (me and marcular@kth.se) made for the course cprog12 to create a C++ 
+A fairly big lab we (ansjob@kth.se and marcular@kth.se) made for the course cprog12 to create a C++ 
 role playing game using classic text-commands. 
 The engine is there and very extensible.
 
