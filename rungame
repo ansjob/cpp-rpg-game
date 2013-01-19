@@ -1,0 +1,2 @@
+#!/bin/bash
+rlwrap valgrind --leak-check=full ./game $1

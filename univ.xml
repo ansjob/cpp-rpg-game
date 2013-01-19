@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<N3rpg11game_objectE>
+  <name>generic object</name>
+  <m_desc>
+===============================================================================
+                        The adventure of rescuing Tek'Niz
+===============================================================================
+
+You have been kept prisoner at Han'Dels for several months, 
+but finally managed to escape in a small ship.
+You were able to find out that they are planning on collaborating with the 
+famous gangster Charlie Mancrunch to bring down your home town of Tek'Niz. 
+In addition to this, you found out that the racketeer has kidnapped the mayor
+of Tek'Niz; Bjarne Paine.
+Fortunately Charlie does not know that you know this, but the Han'Dels guards 
+are on the lookout for you.
+
+Bring Charlie down and rescue the mayor, then you will be the great hero.
+
+Type 'help' to see a list of commands; the most important ones are 
+    'scan', 'buy', 'use', 'attack' and 'move'.
+</m_desc>
+  <id>129810880</id>
+  <children>
+    <N3rpg6galaxyE>
+      <name>Far'away Galaxy</name>
+      <m_desc>generic object description</m_desc>
+      <id>129811792</id>
+      <children>
+        <N3rpg12solar_systemE>
+          <name>Han'Dels</name>
+          <m_desc>Capitol system of the Perfect State society.</m_desc>
+          <id>129812448</id>
+          <children>
+            <N3rpg3npcE>
+              <name>Interceptor</name>
+              <m_desc>One of Han'Dels battleships.</m_desc>
+              <id>129815776</id>
+              <children>
+                <N3rpg6weaponE>
+                  <name>Interceptor Missile Launcher</name>
+                  <m_desc>Standard issue for Perfect State agents.</m_desc>
+                  <id>129816784</id>
+                  <children/>
+                  <m_volume>100</m_volume>
+                  <m_value>1000</m_value>
+                  <m_accuracy>0.4</m_accuracy>
+                  <m_min_damage>50</m_min_damage>
+                  <m_max_damage>80</m_max_damage>
+                </N3rpg6weaponE>
+                <N3rpg6shieldE>
+                  <name>Interceptor Shield Generator</name>
+                  <m_desc>Standard issue for Perfect State agents.</m_desc>
+                  <id>129818448</id>
+                  <children/>
+                  <m_volume>50</m_volume>
+                  <m_value>1000</m_value>
+                  <equipped>true</equipped>
+                  <m_recharge_rate>2</m_recharge_rate>
+                  <m_recharge_amount>20</m_recharge_amount>
+                  <m_max>50</m_max>
+                  <m_cur>50</m_cur>
+                  <m_until_recharge>0</m_until_recharge>
+                </N3rpg6shieldE>
+              </children>
+              <hp>100</hp>
+              <selling>false</selling>
+              <credits>0</credits>
+              <weapon>129816784</weapon>
+              <shield>129818448</shield>
+              <hostiles>
+                <entry>You (player)</entry>
+              </hostiles>
+            </N3rpg3npcE>
+            <N3rpg3npcE>
+              <name>Interceptor</name>
+              <m_desc>One of Han'Dels battleships.</m_desc>
+              <id>129819600</id>
+              <children>
+                <N3rpg6weaponE>
+                  <name>Interceptor Missile Launcher</name>
+                  <m_desc>Standard issue for Perfect State agents.</m_desc>
+                  <id>129820384</id>
+                  <children/>
+                  <m_volume>100</m_volume>
+                  <m_value>1000</m_value>
+                  <m_accuracy>0.4</m_accuracy>
+                  <m_min_damage>50</m_min_damage>
+                  <m_max_damage>80</m_max_damage>
+                </N3rpg6weaponE>
+                <N3rpg6shieldE>
+                  <name>Interceptor Shield Generator</name>
+                  <m_desc>Standard issue for Perfect State agents.</m_desc>
+                  <id>129821440</id>
+                  <children/>
+                  <m_volume>50</m_volume>
+                  <m_value>1000</m_value>
+                  <equipped>true</equipped>
+                  <m_recharge_rate>2</m_recharge_rate>
+                  <m_recharge_amount>20</m_recharge_amount>
+                  <m_max>50</m_max>
+                  <m_cur>50</m_cur>
+                  <m_until_recharge>0</m_until_recharge>
+                </N3rpg6shieldE>
+              </children>
+              <hp>100</hp>
+              <selling>false</selling>
+              <credits>0</credits>
+              <weapon>129820384</weapon>
+              <shield>129821440</shield>
+              <hostiles>
+                <entry>You (player)</entry>
+              </hostiles>
+            </N3rpg3npcE>
+          </children>
+          <neighbours>
+            <neighbour>
+              <direction>sg 2352</direction>
+              <system-name>Neutral Zone</system-name>
+            </neighbour>
+          </neighbours>
+        </N3rpg12solar_systemE>
+        <N3rpg12solar_systemE>
+          <name>Neutral Zone</name>
+          <m_desc>Borderland between the two conflicting nations Perfect State and the Stellar Republic.</m_desc>
+          <id>129813520</id>
+          <children>
+            <N3rpg6playerE>
+              <name>You (player)</name>
+              <m_desc>Your magnificient ship!</m_desc>
+              <id>129814720</id>
+              <children/>
+              <hp>100</hp>
+              <selling>false</selling>
+              <credits>10000</credits>
+            </N3rpg6playerE>
+          </children>
+          <neighbours>
+            <neighbour>
+              <direction>sg 2352</direction>
+              <system-name>Han'Dels</system-name>
+            </neighbour>
+            <neighbour>
+              <direction>sg 7463</direction>
+              <system-name>Humanotechnics Trade Federation</system-name>
+            </neighbour>
+          </neighbours>
+        </N3rpg12solar_systemE>
+        <N3rpg12solar_systemE>
+          <name>Humanotechnics Trade Federation</name>
+          <m_desc>A trading hub run by the Humanotechnics corporation.</m_desc>
+          <id>129822624</id>
+          <children>
+            <N3rpg8merchantE>
+              <name>SkoAugust</name>
+              <m_desc>A shoe merchant.</m_desc>
+              <id>129825552</id>
+              <children>
+
+                <N3rpg4itemE>
+                  <name>Leather Shoes</name>
+                  <m_desc>A pair of exquisite leather shoes.</m_desc>
+                  <id>129824289</id>
+                  <children/>
+                  <m_volume>2</m_volume>
+                  <m_value>10</m_value>
+                </N3rpg4itemE>
+
+                <N3rpg4itemE>
+                  <name>Combat Boots</name>
+                  <m_desc>Fine combat boots (one pair).</m_desc>
+                  <id>129824689</id>
+                  <children/>
+                  <m_volume>3</m_volume>
+                  <m_value>25</m_value>
+                </N3rpg4itemE>
+
+                <N3rpg14shield_boosterE/>
+                <N3rpg14shield_boosterE/>
+ 
+              </children>
+              <hp>100</hp>
+              <selling>true</selling>
+              <credits>0</credits>
+              <hostiles/>
+              <possible_items>
+                <N3rpg4itemE>
+                  <name>Leather Shoes</name>
+                  <m_desc>A pair of exquisite leather shoes.</m_desc>
+                  <id>129824288</id>
+                  <children/>
+                  <m_volume>2</m_volume>
+                  <m_value>10</m_value>
+                </N3rpg4itemE>
+                <N3rpg4itemE>
+                  <name>Combat Boots</name>
+                  <m_desc>Fine combat boots (one pair).</m_desc>
+                  <id>129824688</id>
+                  <children/>
+                  <m_volume>3</m_volume>
+                  <m_value>25</m_value>
+                </N3rpg4itemE>
+                <N3rpg14shield_boosterE/>
+              </possible_items>
+            </N3rpg8merchantE>
+            <N3rpg8merchantE>
+              <name>Jarjar Gunz</name>
+              <m_desc>A military supply merchant.</m_desc>
+              <id>129828432</id>
+              <children>
+
+                <N3rpg6weaponE>
+                  <name>Ray Blaster</name>
+                  <m_desc>A fine laser cannon.</m_desc>
+                  <id>129826881</id>
+                  <children/>
+                  <m_volume>100</m_volume>
+                  <m_value>500</m_value>
+                  <m_accuracy>0.95</m_accuracy>
+                  <m_min_damage>10</m_min_damage>
+                  <m_max_damage>30</m_max_damage>
+                </N3rpg6weaponE>
+
+                <N3rpg6weaponE>
+                  <name>Turing Machinegun</name>
+                  <m_desc>A fine Gatling laser cannon.</m_desc>
+                  <id>129827296</id>
+                  <children/>
+                  <m_volume>100</m_volume>
+                  <m_value>500</m_value>
+                  <m_accuracy>0.95</m_accuracy>
+                  <m_min_damage>15</m_min_damage>
+                  <m_max_damage>65</m_max_damage>
+                </N3rpg6weaponE>
+
+                <N3rpg6shieldE>
+                  <name>Photon Barrier</name>
+                  <m_desc>Standard issue shield generator. Effective protection against lasers.</m_desc>
+                  <id>129827744</id>
+                  <children/>
+                  <m_volume>70</m_volume>
+                  <m_value>800</m_value>
+                  <equipped>false</equipped>
+                  <m_recharge_rate>3</m_recharge_rate>
+                  <m_recharge_amount>20</m_recharge_amount>
+                  <m_max>50</m_max>
+                  <m_cur>50</m_cur>
+                  <m_until_recharge>0</m_until_recharge>
+                </N3rpg6shieldE>
+
+                <N3rpg4itemE>
+                  <name>Combat Boots</name>
+                  <m_desc>Fine combat boots (one pair).</m_desc>
+                  <id>129828176</id>
+                  <children>
+                  </children>
+                  <m_volume>3</m_volume>
+                  <m_value>25</m_value>
+                </N3rpg4itemE>
+ 
+              </children>
+              <hp>100</hp>
+              <selling>true</selling>
+              <credits>0</credits>
+              <hostiles/>
+              <possible_items>
+                <N3rpg6weaponE>
+                  <name>Ray Blaster</name>
+                  <m_desc>A fine laser cannon.</m_desc>
+                  <id>129826880</id>
+                  <children/>
+                  <m_volume>100</m_volume>
+                  <m_value>500</m_value>
+                  <m_accuracy>0.95</m_accuracy>
+                  <m_min_damage>10</m_min_damage>
+                  <m_max_damage>30</m_max_damage>
+                </N3rpg6weaponE>
+                <N3rpg6weaponE>
+                  <name>Turing Machinegun</name>
+                  <m_desc>A fine Gatling laser cannon.</m_desc>
+                  <id>129827296</id>
+                  <children/>
+                  <m_volume>100</m_volume>
+                  <m_value>500</m_value>
+                  <m_accuracy>0.95</m_accuracy>
+                  <m_min_damage>15</m_min_damage>
+                  <m_max_damage>65</m_max_damage>
+                </N3rpg6weaponE>
+                <N3rpg6shieldE>
+                  <name>Photon Barrier</name>
+                  <m_desc>Standard issue shield generator. Effective protection against lasers.</m_desc>
+                  <id>129827744</id>
+                  <children/>
+                  <m_volume>70</m_volume>
+                  <m_value>800</m_value>
+                  <equipped>false</equipped>
+                  <m_recharge_rate>3</m_recharge_rate>
+                  <m_recharge_amount>20</m_recharge_amount>
+                  <m_max>50</m_max>
+                  <m_cur>50</m_cur>
+                  <m_until_recharge>0</m_until_recharge>
+                </N3rpg6shieldE>
+                <N3rpg4itemE>
+                  <name>Combat Boots</name>
+                  <m_desc>Fine combat boots (one pair).</m_desc>
+                  <id>129828176</id>
+                  <children>
+                  </children>
+                  <m_volume>3</m_volume>
+                  <m_value>25</m_value>
+                </N3rpg4itemE>
+              </possible_items>
+            </N3rpg8merchantE>
+          </children>
+          <neighbours>
+            <neighbour>
+              <direction>sg 7463</direction>
+              <system-name>Neutral Zone</system-name>
+            </neighbour>
+            <neighbour>
+              <direction>sg 9001</direction>
+              <system-name>Taxe'Free Space</system-name>
+            </neighbour>
+          </neighbours>
+        </N3rpg12solar_systemE>
+        <N3rpg13border_systemE>
+          <name>Taxe'Free Space</name>
+          <m_desc>A border guard station run by the Stellar Republic.</m_desc>
+          <id>129829552</id>
+          <children/>
+          <neighbours>
+            <neighbour>
+              <direction>sg 4711</direction>
+              <system-name>Tek'Niz</system-name>
+            </neighbour>
+            <neighbour>
+              <direction>sg 9001</direction>
+              <system-name>Humanotechnics Trade Federation</system-name>
+            </neighbour>
+          </neighbours>
+        </N3rpg13border_systemE>
+        <N3rpg16sanctuary_systemE>
+          <name>Tek'Niz</name>
+          <m_desc>Capitol of the Stellar Republic.
+This system is monitored by the authorities, and aggressors will be shot down.</m_desc>
+          <id>129831056</id>
+          <children/>
+          <neighbours>
+            <neighbour>
+              <direction>sg 1024</direction>
+              <system-name>Newacre</system-name>
+            </neighbour>
+            <neighbour>
+              <direction>sg 4711</direction>
+              <system-name>Taxe'Free Space</system-name>
+            </neighbour>
+          </neighbours>
+        </N3rpg16sanctuary_systemE>
+        <N3rpg12solar_systemE>
+          <name>Newacre</name>
+          <m_desc>Countryside solar system primarily inhabited by space miners.</m_desc>
+          <id>129832560</id>
+          <children>
+            <N3rpg5minerE>
+              <name>Olaf the miner</name>
+              <m_desc>Space miner Olaf (easily irritated).</m_desc>
+              <id>129834000</id>
+              <children>
+
+                <N3rpg6weaponE>
+                  <name>Mining Laser</name>
+                  <m_desc>A Laser used by miners to blast holes in mountains.</m_desc>
+                  <id>880</id>
+                  <children/>
+                  <m_volume>400</m_volume>
+                  <m_value>300</m_value>
+                  <m_accuracy>0.5</m_accuracy>
+                  <m_min_damage>3</m_min_damage>
+                  <m_max_damage>7</m_max_damage>
+                </N3rpg6weaponE>
+
+                <N3rpg6shieldE>
+                  <name>Ultrasonic Buffer</name>
+                  <m_desc>A basic shield used by miners to protect them from Sonic the Hedgehog.</m_desc>
+                  <id>744</id>
+                  <children/>
+                  <m_volume>50</m_volume>
+                  <m_value>400</m_value>
+                  <equipped>true</equipped>
+                  <m_recharge_rate>5</m_recharge_rate>
+                  <m_recharge_amount>10</m_recharge_amount>
+                  <m_max>35</m_max>
+                  <m_cur>35</m_cur>
+                  <m_until_recharge>0</m_until_recharge>
+                </N3rpg6shieldE>
+
+              </children>
+              <hp>100</hp>
+              <selling>false</selling>
+              <credits>0</credits>
+		<weapon>880</weapon>
+		<shield>744</shield>
+              <hostiles/>
+            </N3rpg5minerE>
+          </children>
+          <neighbours>
+            <neighbour>
+              <direction>sg 1024</direction>
+              <system-name>Tek'Niz</system-name>
+            </neighbour>
+            <neighbour>
+              <direction>sg 9967</direction>
+              <system-name>Induced Magnetized Nebula</system-name>
+            </neighbour>
+          </neighbours>
+        </N3rpg12solar_systemE>
+        <N3rpg15poisoned_systemE>
+          <name>Induced Magnetized Nebula</name>
+          <m_desc>A hazardous solar system causing damage to ships in the system.</m_desc>
+          <id>129835024</id>
+          <children/>
+          <neighbours>
+            <neighbour>
+              <direction>sg 666</direction>
+              <system-name>Luminous City of Difa</system-name>
+            </neighbour>
+            <neighbour>
+              <direction>sg 9967</direction>
+              <system-name>Newacre</system-name>
+            </neighbour>
+          </neighbours>
+        </N3rpg15poisoned_systemE>
+        <N3rpg12solar_systemE>
+          <name>Luminous City of Difa</name>
+          <m_desc>Criminal controlled territory, filled with illegal casinos and black market traders.</m_desc>
+          <id>129836512</id>
+          <children>
+            <N3rpg4bossE>
+              <name>Charlie Mancrunch</name>
+              <m_desc>A dangerous crime lord. Likes to eat humans.</m_desc>
+              <id>129837968</id>
+              <children>
+
+		<N3rpg5mayorE>
+		      <name>Mayor Paine</name>
+		      <m_desc>The mayor of the Stellar Republic.</m_desc>
+		      <id>12983</id>
+		      <children/>
+		      <hp>100</hp>
+		      <selling>false</selling>
+		      <credits>9999999</credits>
+		      <hostiles/>
+		</N3rpg5mayorE>
+
+                <N3rpg6weaponE>
+                  <name>Tommygun Laser</name>
+                  <m_desc>A powerful Laser custom made for Charlie Mancrunch.</m_desc>
+                  <id>880</id>
+                  <children/>
+                  <m_volume>350</m_volume>
+                  <m_value>5000</m_value>
+                  <m_accuracy>0.9</m_accuracy>
+                  <m_min_damage>40</m_min_damage>
+                  <m_max_damage>100</m_max_damage>
+                </N3rpg6weaponE>
+
+                <N3rpg6shieldE>
+                  <name>Gangster Shield Generator</name>
+                  <m_desc>A powerful shield used by gangster vessels.</m_desc>
+                  <id>744</id>
+                  <children/>
+                  <m_volume>500</m_volume>
+                  <m_value>4000</m_value>
+                  <equipped>true</equipped>
+                  <m_recharge_rate>1</m_recharge_rate>
+                  <m_recharge_amount>40</m_recharge_amount>
+                  <m_max>200</m_max>
+                  <m_cur>200</m_cur>
+                  <m_until_recharge>0</m_until_recharge>
+                </N3rpg6shieldE>
+
+              </children>
+              <hp>100</hp>
+              <selling>false</selling>
+              <credits>999999</credits>
+		<weapon>880</weapon>
+		<shield>744</shield>
+              <hostiles/>
+            </N3rpg4bossE>
+          </children>
+          <neighbours>
+            <neighbour>
+              <direction>sg 666</direction>
+              <system-name>Induced Magnetized Nebula</system-name>
+            </neighbour>
+          </neighbours>
+        </N3rpg12solar_systemE>
+      </children>
+    </N3rpg6galaxyE>
+  </children>
+</N3rpg11game_objectE>
