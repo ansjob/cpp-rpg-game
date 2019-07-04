@@ -22,3 +22,7 @@ docs/
 game
 
 Makefile
+
+# c lion files
+.idea
+Project.cbp

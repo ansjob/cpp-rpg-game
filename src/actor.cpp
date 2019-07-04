@@ -2,6 +2,7 @@
 #include <string>
 #include <sstream>
 #include <iterator>
+#include <vector>
 
 #include "utils.h"
 #include "actor.h"

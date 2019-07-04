@@ -3,6 +3,7 @@
 
 #include <string>
 #include <sstream>
+#include <vector>
 
 #include "npc.h"
 #include "item.h"

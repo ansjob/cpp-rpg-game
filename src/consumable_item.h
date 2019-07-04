@@ -1,3 +1,5 @@
+#include <utility>
+
 #ifndef CONSUMABLE_ITEM_H
 #define CONSUMABLE_ITEM_H
 
@@ -25,8 +27,13 @@ public:
 	 *	@param val Value of the consumable_item
 	 *	@param fun Lambda function for the use action of this item
 	 */
-	consumable_item(string n = "Dummy consumable_item", string desc = "Dummy consumable_item description", int vol = 0, int val = 0, function<bool (ostream &os, actor*)> fun = [] {}) :
-		item(n, desc, vol, val), m_function(fun) {}
+	consumable_item(
+	        string n = "Dummy consumable_item",
+	        string desc = "Dummy consumable_item description",
+	        int vol = 0,
+	        int val = 0,
+	        function<bool (ostream &os, actor*)> fun = [](ostream&  a, actor* b) {return true;}) :
+		item(n, desc, vol, val), m_function(std::move(fun)) {}
 
 	/**
 	 *	Use the consumable item.
